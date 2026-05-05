@@ -8,6 +8,21 @@ echo "Full Setup Pipeline"
 echo "================================================"
 echo ""
 
+# Phase 0: Enable Google Cloud APIs
+echo "[Phase 0/3] Enabling Google Cloud APIs..."
+echo "------------------------------------------------"
+
+gcloud services enable \
+    aiplatform.googleapis.com \
+    sqladmin.googleapis.com \
+    compute.googleapis.com \
+    run.googleapis.com \
+    cloudbuild.googleapis.com \
+    artifactregistry.googleapis.com
+
+echo "      ✓ APIs enabled"
+echo ""
+
 # Phase 1: Database Setup
 echo "[Phase 1/3] Database Setup"
 echo "------------------------------------------------"
