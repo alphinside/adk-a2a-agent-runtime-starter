@@ -10,7 +10,7 @@ toolbox = ToolboxToolset(TOOLBOX_URL)
 
 root_agent = LlmAgent(
     name="restaurant_agent",
-    model="gemini-2.5-flash",
+    model="gemini-3.5-flash",
     instruction="""You are a friendly and knowledgeable concierge at "Foodie Finds," a restaurant. Your job:
 - Help diners browse the menu by category or cuisine type.
 - Provide full details about specific dishes, including ingredients, price, and dietary information.
